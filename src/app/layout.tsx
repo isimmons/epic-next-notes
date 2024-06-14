@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./tailwind.css";
 import Link from "next/link";
-import favicon from "~/assets/favicon.svg";
+import favicon from "~/app/assets/favicon.svg";
 
 export const metadata: Metadata = {
   title: "Epic Next Notes",
