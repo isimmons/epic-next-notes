@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./tailwind.css";
+import "./styles/tailwind.css";
+import "./styles/font.css";
 import Link from "next/link";
 
 export const metadata: Metadata = {
