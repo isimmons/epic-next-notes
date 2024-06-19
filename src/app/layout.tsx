@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import "./styles/tailwind.css";
-import "./styles/font.css";
-import Link from "next/link";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import './styles/font.css';
+import './styles/tailwind.css';
 
 export const metadata: Metadata = {
-  title: "Epic Next Notes",
-  description: "Based on the Epic Notes app but built with Next.js",
+  title: 'Epic Next Notes',
+  description: 'Based on the Epic Notes app but built with Next.js',
 };
 
 export default function RootLayout({
@@ -56,7 +56,7 @@ export default function RootLayout({
             </nav>
           </header>
 
-          <div className="flex-1 container">{children}</div>
+          <div className="container flex-1">{children}</div>
 
           <div className="container mx-auto flex justify-between">
             <Link href="/">

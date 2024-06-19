@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="text-center mt-36">
+    <div className="mt-36 text-center">
       <h1 className="my-8 text-h1">Epic Notes</h1>
       <p>
         <span className="inline-flex items-center justify-center gap-2 rounded-xl bg-muted px-8 py-4 text-body-lg text-muted-foreground">
@@ -20,7 +20,7 @@ export default function Home() {
           </svg>
         </span>
       </p>
-      <h2 className="font-bold my-2">Humble Beginnings...</h2>
+      <h2 className="my-2 font-bold">Humble Beginnings...</h2>
       <p className="text-xl">
         Started with create-remix and built up to match the Epicweb Workshop
         app.

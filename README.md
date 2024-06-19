@@ -1,6 +1,7 @@
 # Epic Next Notes
 
-Taking the Epic Web Foundations Workshop, I decided to build my own Remix app from scratch and use it to work along with the workshop.
+Taking the Epic Web Foundations Workshop, I decided to build my own Remix app
+from scratch and use it to work along with the workshop.
 
 I plan on trying to build the same application with Next, Nuxt, and Laravel.
 

@@ -1,0 +1,10 @@
+node_modules
+
+/.next/
+/out/
+
+# production
+/build
+
+package.json
+package-lock.json

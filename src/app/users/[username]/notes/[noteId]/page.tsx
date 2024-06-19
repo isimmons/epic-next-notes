@@ -4,7 +4,7 @@ type Props = {
 
 export default function NotePage({ params }: Props) {
   return (
-    <div className="container pt-12 border-8 border-red-500">
+    <div className="container border-8 border-red-500 pt-12">
       <h2 className="text-h2">{params.noteId}</h2>
     </div>
   );
