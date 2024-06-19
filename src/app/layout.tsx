@@ -56,9 +56,7 @@ export default function RootLayout({
             </nav>
           </header>
 
-          <div className="flex-1 container">
-            <div className="mt-36">{children}</div>
-          </div>
+          <div className="flex-1 container">{children}</div>
 
           <div className="container mx-auto flex justify-between">
             <Link href="/">
