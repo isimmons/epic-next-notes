@@ -15,8 +15,8 @@ const getNote = async (noteId: string) => {
   return { title: note.title, content: note.content };
 };
 
-export default async function NotePage({ params }: Props) {
-  const note = await getNote(params.noteId);
+export default async function NotePage({ params: { noteId } }: Props) {
+  const note = await getNote(noteId);
 
   return (
     <div className="absolute inset-0 flex flex-col px-10">

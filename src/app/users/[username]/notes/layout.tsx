@@ -8,9 +8,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const dynamic = 'force-dynamic';
-
-const getData = (username: string) => {
+const getData = async (username: string) => {
   const owner = db.user.findFirst({
     where: {
       username: { equals: username },
@@ -33,8 +31,14 @@ const getData = (username: string) => {
   };
 };
 
-export default function NotesLayout({ params, children }: Props) {
-  const { owner, notes } = getData(params.username);
+export default async function NotesLayout({
+  params: { username },
+  children,
+}: Props) {
+  if (typeof username !== 'string')
+    throw Error('Invalid username in request URL.');
+
+  const { owner, notes } = await getData(username);
 
   const navLinkDefaultClassName =
     'line-clamp-2 block rounded-l-full py-2 pl-8 pr-6 text-base lg:text-xl';
